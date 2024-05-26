@@ -1,0 +1,23 @@
+Cleans the input text by performing the following operations:
+- Removes HTML tags
+- Removes non-alphanumeric characters
+- Converts the text to lowercase
+- Removes numeric characters
+- Removes English stopwords
+
+Args:
+    text (str): The input text to be cleaned.
+
+Returns:
+    str: The cleaned text.
+
+This script trains a Multinomial Naive Bayes classifier on a dataset of text reviews and their associated sentiment labels (positive or negative). The script performs the following steps:
+
+1. Imports the necessary libraries and modules.
+2. Loads the dataset from a CSV file.
+3. Cleans the text data using the `clean_text` function.
+4. Converts the text data to a numerical representation using TF-IDF vectorization.
+5. Splits the data into training and testing sets.
+6. Trains the Multinomial Naive Bayes classifier on the training data.
+7. Evaluates the model's performance on the testing data, printing the accuracy and classification report.
+8. Saves the trained model and vectorizer to disk using the `joblib` library.
