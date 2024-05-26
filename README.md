@@ -1,6 +1,14 @@
 # project17
 movie review 
 by: mohamed fares
+
+you should creat new enev 
+use this code in your terminal : python -m venv venv
+after that actevate the enve : .\venv\Scripts\activate
+
+
+
+
 in app.py
 Provides a Flask API endpoint for predicting the sentiment of a given text input.
 
