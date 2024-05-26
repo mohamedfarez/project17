@@ -42,3 +42,29 @@ This script trains a Multinomial Naive Bayes classifier on a dataset of text rev
 7. Evaluates the model's performance on the testing data, printing the accuracy and classification report.
 8. Saves the trained model and vectorizer to disk using the `joblib` library.
 
+you should have all of this file in your project
+
+sentiment-analysis/
+
+├── use_data.py
+├── app.py
+├── data/
+│   └── dataset.csv
+├── scripts/
+│   ├── clean_text.py
+│   └── model.py
+├── test/
+│   ├── test_app.py
+│   └── test_model.py
+│   └── test_clean_text.py
+└── requirements.txt
+
+
+
+after you finish put this code in your terminal :
+1- python scripts/model.py
+2-python app.py
+3- by using Postman  or curl you can test this project 
+
+
+i hope U enjoy .
