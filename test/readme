@@ -1,0 +1,40 @@
+
+in test_app
+
+Tests for the prediction API in the Flask application.
+
+This module contains a set of unit tests for the `/predict` endpoint in the Flask application. The tests cover various scenarios, including positive and negative sentiment predictions, as well as error cases such as empty or missing input text.
+
+The `client` fixture is used to create a test client for the Flask application, which is used to make HTTP requests to the `/predict` endpoint.
+
+
+in test_clean 
+Tests for the `clean_text` function in the `scripts.clean_text` module.
+
+The `TestCleanText` class contains unit tests that verify the behavior of the
+`clean_text` function, which is responsible for cleaning and preprocessing text
+data. The tests cover the following functionality:
+
+- Removing HTML tags from the input text
+- Removing non-alphanumeric characters from the input text
+- Converting the input text to lowercase
+- Removing numeric characters from the input text
+- Removing stopwords from the input text
+- Handling an empty input string
+
+These tests ensure that the `clean_text` function behaves as expected and
+produces the desired output for a variety of input scenarios.
+
+
+in test model 
+
+This module contains unit tests for the machine learning model used in the application.
+
+The `TestModel` class inherits from `unittest.TestCase` and defines several test methods to ensure the correct functionality of the model:
+
+- `test_clean_text`: Verifies that the `clean_text` function correctly removes punctuation from the input text.
+- `test_vectorizer`: Checks that the TF-IDF vectorizer is properly configured to use a maximum of 5,000 features.
+- `test_model_fit`: Ensures that the Multinomial Naive Bayes model can be successfully trained on the provided data.
+- `test_model_predict`: Verifies that the trained model can make predictions on the test data.
+
+The `setUp` method is used to prepare the test data, including creating a sample DataFrame, transforming the text data using the TF-IDF vectorizer, and initializing the Multinomial Naive Bayes model.
