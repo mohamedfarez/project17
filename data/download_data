@@ -1,1 +1,5 @@
+You can use this link : https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 
+after download data :
+extract file 
+and use code : use_data  to convert data to CSV file 
