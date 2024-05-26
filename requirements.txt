@@ -3,3 +3,4 @@ nltk
 scikit-learn
 flask
 
+use this code to download requirments : pip install pandas nltk scikit-learn flask
